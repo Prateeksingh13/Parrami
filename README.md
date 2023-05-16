@@ -1,1 +1,1 @@
-# This is Regular Project just for learning new skill
+# This is a regular project just for learning new skills.
