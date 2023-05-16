@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Open+Sans&family=Playfair+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.c_Name {
+  font-size: 2.2rem;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1.5;
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+
+/*  First Block Start */
+
+.Block > .first_Block_Img {
+  width: 723px;
+}
+
+.first_Block_heading {
+  background-color: #f5f3f1;
+  text-align: center;
+  margin-left: 0.5px;
+}
+
+.first_heading {
+  padding-top: 162px;
+  font-size: 1.7rem;
+  letter-spacing: 2;
+}
+
+.first_heading > .heading1 {
+  color: #7c7977;
+}
+
+.first_heading > .heading2 {
+  font-size: 4.2rem;
+  letter-spacing: 2.8;
+  font-family: "Playfair Display", serif;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+/*  Center Block Start */
+
+.main_block_heading{
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  padding-top: 80px;
+  letter-spacing: 1.5;
+  padding-bottom: 20px;
+}
+
+.center_Block {
+  display: flex;
+  padding-bottom: 45px;
+}
+
+.center_Block > img {
+  height: 530px;
+  width: 530px;
+}
+
+.center_Block_heading {
+  text-align: center;
+  width: 100%;
+}
+
+.center_heading {
+  padding-top: 162px;
+  font-size: 1.7rem;
+}
+
+.center_heading > .heading1 {
+  font-size: 3.5rem;
+  margin-bottom: 40px;
+  color: #000000;
+}
+
+.center_heading > p {
+  line-height: 1;
+  font-size: 2rem;
+  color: #7c7977;
+}
+
+/* End Block Start*/
+
+.founder_Image > img {
+  width: 100%;
+}
+
+.founder_Block_heading {
+  text-align: center;
+}
+
+.founder_heading {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  font-size: 1.7rem;
+  line-height: 1;
+  background-color: #f5f3f1;
+  margin-bottom: 40px;
+}
+
+.contact {
+  font-size: 2.5rem;
+  letter-spacing: 2;
+  color: #7c7977;
+}
+
+.contact_us {
+  text-align: center;
+}
+
+.contact_Name {
+  padding-bottom: 40px;
+  font-size: 3.5rem;
+  letter-spacing: 2;
+}
+
+.contact_address {
+  padding-bottom: 40px;
+  font-size: 2rem;
+  color: #7c7977;
+}
+
+.disclaimer {
+  font-size: 2.5rem;
+  letter-spacing: 2;
+  color: #7c7977;
+}
+
+.disclaimer_div {
+  text-align: center;
+}
+
+.disclaimer_div > p {
+  padding-bottom: 40px;
+  font-size: 1.7rem;
+  color: #7c7977;
+}
+
+
+/* chat Bot UI CSS */
+
+#click {
+  display: none;
+}
+label {
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  height: 55px;
+  width: 55px;
+  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  text-align: center;
+  line-height: 55px;
+  border-radius: 50px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+.wrapper {
+  position: fixed;
+  right: 30px;
+  bottom: 0px;
+  max-width: 400px;
+  background: linear-gradient(to top, white 50%, #ff8c00 50%);
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+#click:checked ~ .wrapper {
+  opacity: 1;
+  bottom: 85px;
+  pointer-events: auto;
+}
+.wrapper .head-text {
+  line-height: 30px;
+  color: #fff;
+  border-radius: 15px 15px 0 0;
+  box-sizing: content-box;
+  padding: 0 20px;
+  font-size: 20px;
+  background: -webkit-linear-gradient(left, #ff8c00, #ff8c00);
+}
+.icon {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  margin: -30px 0 0 20px;
+}
+.wrapper .chat-box {
+  padding: 20px 10px 5px 10px;
+  width: 100%;
+}
+.chat-box form {
+  padding: 10px 15px;
+  margin: 20px 0;
+  border-radius: 25px;
+  background: white;
+  border: 1px solid lightgrey;
+}
+.chat-box .out {
+  margin: 20px;
+}
+.chat-box .firstline button {
+  padding: 10px 15px;
+  margin: 5px 0;
+  border-radius: 25px;
+  border: 1px solid lightgrey;
+  font-size: 14px;
+  background: white;
+}
+.chat-box form .firstline button:active {
+  transform: scale(0.97);
+}
+
+.chat-box .chat-start {
+  text-align: center;
+}
+
+.chat-box form .chat-start button {
+  padding: 10px 15px;
+  margin: 20px 0;
+  border-radius: 15px;
+  border: 1px solid lightgray;
+  font-size: 18px;
+  background: white;
+}
+.chat-box form .chat-start button:active {
+  transform: scale(0.97);
+}
